@@ -8,15 +8,19 @@ const Form = () => {
   return (
     <div className='form'>
         <div className='progressbar'></div>
-        <div className='form-container'></div>
+        <div className='form-container'>
         <div className='header'>
             <h1>{FormTitles[page]}</h1>
         </div>
         <div className='body'></div>
-        <div className='footer'></div>
-
+        <div className='footer'>
         <button onClick={() => {setPage((currPage) => currPage - 1)}}>Prev</button>
         <button onClick={() => {setPage((currPage) => currPage + 1)}}>Next</button>
+        </div>
+
+        
+        </div>
+       
     </div>
     
   )
